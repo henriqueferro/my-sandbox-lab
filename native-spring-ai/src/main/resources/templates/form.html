@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Learning Recommendation App</title>
+    <link rel="stylesheet" href="styles.css">  
+</head>
+<body style="font-family: Verdana; color: #333232;">
+    <div class="container">
+        <h2 style="text-align: center;">Hello!🤓</h2>
+        <h3 style="text-align: center;">This app will help you plan how to become a Jedi on OCI.</h3>   
+        <form action="/recommend" method="post">
+            <div class="input_wrap">
+                <label for="role">Role:</label>
+                <input type="text" name="role" placeholder="Developer">
+            </div>
+            <div class="input_wrap">
+                <label for="area">Area:</label>
+                <input type="text" name="area" placeholder="Java">
+            </div>
+            <div class="input_wrap">
+                <label for="level">Level:</label>
+                <select name="level" id="level">
+                    <option value="level">Beginner</option>
+                    <option value="level">Advanced</option>
+                    <option value="level">Expert</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Let's learning!🎓</button>
+        </form>
+    </div>
+</body>
+</html>
