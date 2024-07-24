@@ -1,6 +1,6 @@
-# Native Spring AI
+# Native Spring AI Example
 
-This is a learning recommendation service built with Spring AI, OpeAI, and GraalVM. The base is a regular Spring app, and the integration with OpenAI is implemented in `RecommendationLearning`. Note that the app is using `OPENAI_API_KEY`.
+This is a OCI learning recommendation service built with Spring AI, OpeAI, and GraalVM. The base is a regular Spring app, and the integration with OpenAI is implemented in `RecommendationLearning`. Note that the app is using `OPENAI_API_KEY`.
 
 ## Build a native app with GraalVM:
 
