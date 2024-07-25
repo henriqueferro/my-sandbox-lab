@@ -2,7 +2,7 @@
 
 This is a OCI learning recommendation service built with Spring AI, OpeAI, and GraalVM. The base is a regular Spring app, and the integration with OpenAI is implemented in `RecommendationLearning`. Note that the app is using `OPENAI_API_KEY`.
 
-## Edit and put a valid Open API key on application.properties file
+## Change a valid Open API key on application.properties:
 spring.ai.openai.api-key=${OPENAI_API_KEY}
 
 ## Build a native app with GraalVM:
