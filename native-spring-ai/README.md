@@ -1,4 +1,4 @@
-# Native Spring AI Example
+# Native Spring AI & GraalVM Demo Application
 
 [![Java](https://img.shields.io/badge/Java-22-red.svg)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 [![GraalVM](https://img.shields.io/badge/GraalVM-20-darkblue.svg)](https://www.graalvm.org/)
