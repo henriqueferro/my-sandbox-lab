@@ -17,7 +17,7 @@ This is a OCI learning recommendation service built with Spring AI, OpeAI, and G
 
 - **Java 22**: The project uses Java 22 as the programming language.
 - **GraalVM 20**: The project uses GraalVM to execute Java bytecode.
-- **Spring AI**: Spring AI is an application framework for AI engineering.
+- **Spring AI 0.8.1**: Spring AI is an application framework for AI engineering.
 - **Open AI**: OpenAI is an artificial intelligence to use as Model on Spring AI.
 
 ## Prerequisites
@@ -48,7 +48,7 @@ This is a OCI learning recommendation service built with Spring AI, OpeAI, and G
   ```shell
   ./target/learningapp http://localhost:8080/
   ```
-* Open into your browser the reqeuest form:
+* Open into your browser the request form:
   http://localhost:8080
 
 ## Usage
