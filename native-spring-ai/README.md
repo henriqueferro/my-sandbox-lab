@@ -1,5 +1,11 @@
 # Native Spring AI Example
 
+[![Java](https://img.shields.io/badge/Java-17-blue.svg)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+[![GraalVM](https://img.shields.io/badge/GraalVM-22.3.r17--grl-brightgreen.svg)](https://www.graalvm.org/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-%23412991?logo=openai&logoColor=white)](https://www.graalvm.org/)
+
+This project demonstrates how to implement  in GraalVM for Java applications using the Truffle API and Espresso project. It provides a secure environment for executing Java code by leveraging GraalVM's capabilities, ensuring that the execution is contained within a sandbox.
+
 This is a OCI learning recommendation service built with Spring AI, OpeAI, and GraalVM. The base is a regular Spring app, and the integration with OpenAI is implemented in `RecommendationLearning`. Note that the app is using `OPENAI_API_KEY`.
 
 ## Change a valid Open API key on application.properties:
