@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/AI-native-%23007FFF?style=for-the-badge&logo=oracle" />
-  <img src="https://img.shields.io/badge/Kubernetes-on-OCI-%232C3E50?style=for-the-badge&logo=kubernetes" />
+  <img src="https://img.shields.io/badge/Kubernetes_on_OCI-blue?style=for-the-badge&logo=kubernetes&logoColor=white" />
   <img src="https://img.shields.io/badge/Spring%20AI-powered-%23007396?style=for-the-badge&logo=spring" />
 </p>
 
@@ -54,7 +54,7 @@ Feel free to reuse anything here for **learning** or **inspiration**. Most code 
 
 ```bash
 git clone https://github.com/henriqueferro/my-sandbox-lab.git
-
+```
 <p align="center">
   Built with ❤️ by Henrique Ferro • <a href="https://www.linkedin.com/in/henriqueferro">Let's Connect on LinkedIn</a>
 </p>
