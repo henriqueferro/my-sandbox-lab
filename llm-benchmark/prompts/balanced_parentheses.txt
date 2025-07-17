@@ -1,0 +1,1 @@
+Escreva uma função em Python que determine se uma string composta apenas por '(', ')', '{', '}', '[' e ']' está com os parênteses balanceados.

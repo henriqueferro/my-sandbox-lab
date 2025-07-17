@@ -1,0 +1,2 @@
+Implemente uma função em Python que resolva um tabuleiro de Sudoku 9x9 usando backtracking. 
+A função deve modificar o tabuleiro original preenchendo os espaços vazios (representados por 0) com números válidos.

@@ -1,0 +1,1 @@
+Implemente o algoritmo de Dijkstra em Python para encontrar o menor caminho entre dois nós em um grafo representado por lista de adjacência.

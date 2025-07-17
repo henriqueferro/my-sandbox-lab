@@ -1,0 +1,1 @@
+Implemente uma classe LRUCache em Python com os métodos get e put, ambos com complexidade O(1).

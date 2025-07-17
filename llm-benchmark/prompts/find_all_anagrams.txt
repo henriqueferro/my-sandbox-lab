@@ -1,0 +1,1 @@
+Dada uma string s e um padrão p, escreva uma função Python que retorne todos os índices de início dos anagramas de p em s.

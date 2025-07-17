@@ -1,0 +1,1814 @@
+
+🔍 Benchmark: FizzBuzz
+🏗️ Testando OpenAI GPT-4o...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: A pontuação é 1.00 porque a resposta está totalmente relevante ao pedido, sem nenhuma informação irrelevante. Ótimo trabalho mantendo o foco na tarefa!, error: None)
+
+For test case:
+
+  - input: Escreva uma função Python que imprime os números de 1 a 100. Para múltiplos de três, imprima "Fizz" em vez do número e para múltiplos de cinco, imprima "Buzz". Para números que são múltiplos de três e cinco, imprima "FizzBuzz".
+  - actual output: Você pode criar a função `fizz_buzz` para resolver esse problema. A função irá iterar sobre os números de 1 a 100 e aplicar as regras especificadas para imprimir "Fizz", "Buzz" ou "FizzBuzz" conforme apropriado. Aqui está o código:
+
+```python
+def fizz_buzz():
+    for num in range(1, 101):
+        if num % 3 == 0 and num % 5 == 0:
+            print("FizzBuzz")
+        elif num % 3 == 0:
+            print("Fizz")
+        elif num % 5 == 0:
+            print("Buzz")
+        else:
+            print(num)
+
+# Chama a função para executar
+fizz_buzz()
+```
+
+Essa função utiliza o operador módulo `%` para verificar se um número é múltiplo de 3, 5 ou ambos. Se o número for múltiplo de ambos, imprime "FizzBuzz". Se for múltiplo apenas de 3, imprime "Fizz", e se for múltiplo apenas de 5, imprime "Buzz". Caso contrário, imprime o próprio número.
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado OpenAI GPT-4o: 1.00
+🏗️ Testando Anthropic Claude Sonnet 4...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 1.00 because the answer was fully relevant and addressed the input perfectly. Great job!, error: None)
+
+For test case:
+
+  - input: Escreva uma função Python que imprime os números de 1 a 100. Para múltiplos de três, imprima "Fizz" em vez do número e para múltiplos de cinco, imprima "Buzz". Para números que são múltiplos de três e cinco, imprima "FizzBuzz".
+  - actual output: Aqui está uma função Python que resolve o problema FizzBuzz:
+
+```python
+def fizzbuzz():
+    """
+    Imprime números de 1 a 100 com as seguintes regras:
+    - Múltiplos de 3: imprime "Fizz"
+    - Múltiplos de 5: imprime "Buzz"
+    - Múltiplos de 3 e 5: imprime "FizzBuzz"
+    - Outros números: imprime o próprio número
+    """
+    for i in range(1, 101):
+        if i % 3 == 0 and i % 5 == 0:
+            print("FizzBuzz")
+        elif i % 3 == 0:
+            print("Fizz")
+        elif i % 5 == 0:
+            print("Buzz")
+        else:
+            print(i)
+
+# Chamando a função
+fizzbuzz()
+```
+
+Aqui está uma versão alternativa mais concisa usando uma abordagem de concatenação de strings:
+
+```python
+def fizzbuzz_v2():
+    """
+    Versão alternativa do FizzBuzz usando concatenação de strings
+    """
+    for i in range(1, 101):
+        output = ""
+        if i % 3 == 0:
+            output += "Fizz"
+        if i % 5 == 0:
+            output += "Buzz"
+        print(output or i)
+
+# Chamando a função
+fizzbuzz_v2()
+```
+
+E aqui está uma versão ainda mais compacta usando uma list comprehension:
+
+```python
+def fizzbuzz_v3():
+    """
+    Versão compacta do FizzBuzz
+    """
+    for i in range(1, 101):
+        print("Fizz" * (i % 3 == 0) + "Buzz" * (i % 5 == 0) or i)
+
+# Chamando a função
+fizzbuzz_v3()
+```
+
+**Exemplo de saída (primeiros 20 números):**
+```
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+16
+17
+Fizz
+19
+Buzz
+```
+
+Todas as três versões produzem o mesmo resultado. A primeira é mais legível e explícita, a segunda é mais elegante, e a terceira é mais compacta (mas talvez menos legível para iniciantes).
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado Anthropic Claude Sonnet 4: 1.00
+🏗️ Testando Cohere Command...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 1.00 because the answer is fully relevant and directly addresses the input without any irrelevant statements. Great job staying focused and concise!, error: None)
+
+For test case:
+
+  - input: Escreva uma função Python que imprime os números de 1 a 100. Para múltiplos de três, imprima "Fizz" em vez do número e para múltiplos de cinco, imprima "Buzz". Para números que são múltiplos de três e cinco, imprima "FizzBuzz".
+  - actual output:  Here is a Python function that prints the numbers from 1 to 100, replacing multiples of three with "Fizz", multiples of five with "Buzz", and printing "FizzBuzz" for numbers that are multiples of both three and five:
+```python
+def fizz_buzz(start, end):
+    for i in range(start, end + 1):
+        if i % 3 == 0 and i % 5 == 0:
+            print("FizzBuzz")
+        elif i % 3 == 0:
+            print("Fizz")
+        elif i % 5 == 0:
+            print("Buzz")
+        else:
+            print(i)
+
+fizz_buzz(1, 100)
+```
+
+This function uses a loop to iterate through the numbers from `start` to `end` (inclusive). It checks if the current number is a multiple of three, five, or both, and prints the appropriate output ("Fizz", "Buzz", or "FizzBuzz"). For any other number, it just prints the current number as usual. 
+
+When you run the function with the arguments `1` and `100`, it will output:
+```
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado Cohere Command: 1.00
+
+🔍 Benchmark: ReverseString
+🏗️ Testando OpenAI GPT-4o...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 1.00 because the answer was fully relevant and directly addressed the request without any irrelevant information. Great job!, error: None)
+
+For test case:
+
+  - input: Escreva uma função Python que inverta uma string sem usar funções embutidas como reversed().
+  - actual output: Claro! Você pode inverter uma string em Python sem usar funções embutidas como `reversed()` ao iterar sobre a string de trás para frente e construir uma nova string. Aqui está um exemplo de como você pode fazer isso:
+
+```python
+def inverter_string(s):
+    # Inicializa uma string vazia para armazenar o resultado
+    string_invertida = ''
+    
+    # Itera sobre a string original de trás para frente
+    for i in range(len(s) - 1, -1, -1):
+        # Adiciona cada caractere à string invertida
+        string_invertida += s[i]
+    
+    return string_invertida
+
+# Exemplo de uso
+texto = "Exemplo"
+texto_invertido = inverter_string(texto)
+print(texto_invertido)  # Saída: olpmexE
+```
+
+Neste código, a função `inverter_string` percorre a string `s` de trás para frente usando um loop `for` e o índice `i` que começa no último caractere (`len(s) - 1`) e vai até o primeiro caractere (`0`), adicionando cada caractere à variável `string_invertida`.
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado OpenAI GPT-4o: 1.00
+🏗️ Testando Anthropic Claude Sonnet 4...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 1.00 because the answer was fully relevant and addressed the input directly without any irrelevant statements. Great job staying focused and concise!, error: None)
+
+For test case:
+
+  - input: Escreva uma função Python que inverta uma string sem usar funções embutidas como reversed().
+  - actual output: Aqui estão algumas maneiras de inverter uma string sem usar funções embutidas:
+
+## Método 1: Usando slicing (mais simples)
+
+```python
+def inverter_string_slicing(texto):
+    """
+    Inverte uma string usando slicing.
+    
+    Args:
+        texto (str): String a ser invertida
+    
+    Returns:
+        str: String invertida
+    """
+    return texto[::-1]
+
+# Exemplo de uso
+texto = "Python"
+resultado = inverter_string_slicing(texto)
+print(f"Original: {texto}")
+print(f"Invertida: {resultado}")
+```
+
+## Método 2: Usando loop (mais didático)
+
+```python
+def inverter_string_loop(texto):
+    """
+    Inverte uma string usando um loop.
+    
+    Args:
+        texto (str): String a ser invertida
+    
+    Returns:
+        str: String invertida
+    """
+    string_invertida = ""
+    
+    # Percorre a string de trás para frente
+    for i in range(len(texto) - 1, -1, -1):
+        string_invertida += texto[i]
+    
+    return string_invertida
+
+# Exemplo de uso
+texto = "Programação"
+resultado = inverter_string_loop(texto)
+print(f"Original: {texto}")
+print(f"Invertida: {resultado}")
+```
+
+## Método 3: Usando recursão
+
+```python
+def inverter_string_recursiva(texto):
+    """
+    Inverte uma string usando recursão.
+    
+    Args:
+        texto (str): String a ser invertida
+    
+    Returns:
+        str: String invertida
+    """
+    # Caso base: string vazia ou com 1 caractere
+    if len(texto) <= 1:
+        return texto
+    
+    # Recursão: último caractere + inversão do resto
+    return texto[-1] + inverter_string_recursiva(texto[:-1])
+
+# Exemplo de uso
+texto = "Recursão"
+resultado = inverter_string_recursiva(texto)
+print(f"Original: {texto}")
+print(f"Invertida: {resultado}")
+```
+
+## Método 4: Usando lista (mais eficiente para strings grandes)
+
+```python
+def inverter_string_lista(texto):
+    """
+    Inverte uma string convertendo para lista.
+    
+    Args:
+        texto (str): String a ser invertida
+    
+    Returns:
+        str: String invertida
+    """
+    # Converte string para lista de caracteres
+    lista_chars = list(texto)
+    
+    # Inverte a lista manualmente
+    inicio = 0
+    fim = len(lista_chars) - 1
+    
+    while inicio < fim:
+        # Troca os caracteres
+        lista_chars[inicio], lista_chars[fim] = lista_chars[fim], lista_chars[inicio]
+        inicio += 1
+        fim -= 1
+    
+    # Converte lista de volta para string
+    return ''.join(lista_chars)
+
+# Exemplo de uso
+texto = "Algoritmo"
+resultado = inverter_string_lista(texto)
+print(f"Original: {texto}")
+print(f"Invertida
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado Anthropic Claude Sonnet 4: 1.00
+🏗️ Testando Cohere Command...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 0.6, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 0.60 because, while the main task of inverting a string was addressed, the output included irrelevant details about using tab characters to designate input and output, which are not necessary for implementing the string reversal function. This extra information detracted from the focus on the core solution., error: None)
+
+For test case:
+
+  - input: Escreva uma função Python que inverta uma string sem usar funções embutidas como reversed().
+  - actual output:  Voce pode escrever uma funcao customizada para inverting a string com recursao. Perceba que vamos usar caracteres de tabulao para designar a string de input e usaremos caracteres de tabulao para designar o inverso. 
+
+```python
+def invert_string(s):
+    """
+    Inverts a string using recursion.
+    """
+    if not s:
+        return ""
+
+    # Split the string into characters and reverse them
+    inverted = [s[i] for i in range(len(s) - 1, -1, -1)]
+
+    # Add the first character to the beginning of the inverted string
+    inverted.insert(0, s[0])
+
+    # Return the inverted string
+    return "".join(inverted)
+
+# Test the function
+input_string = "Hello, World!"
+inverted_string = invert_string(input_string)
+print("Original String:", input_string)
+print("Inverted String:", inverted_string)
+```
+
+Esse codigo divide a string em um lista de caracteres, e luego reversible esse lista de
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado Cohere Command: 0.60
+
+🔍 Benchmark: SudokuSolver
+🏗️ Testando OpenAI GPT-4o...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 1.00 because the answer was fully relevant and addressed the input perfectly, with no irrelevant statements. Great job!, error: None)
+
+For test case:
+
+  - input: Implemente uma função em Python que resolva um tabuleiro de Sudoku 9x9 usando backtracking. 
+A função deve modificar o tabuleiro original preenchendo os espaços vazios (representados por 0) com números válidos.
+  - actual output: Para resolver um tabuleiro de Sudoku 9x9 usando o método de backtracking, podemos implementar uma função em Python que preenche os espaços vazios (representados por 0) com números válidos. O algoritmo de backtracking tenta preencher cada célula vazia com um número de 1 a 9, verificando se a escolha é válida de acordo com as regras do Sudoku. Se uma escolha leva a um impasse, o algoritmo retrocede (backtrack) e tenta uma escolha diferente.
+
+Aqui está uma implementação da função:
+
+```python
+def is_valid(board, row, col, num):
+    # Verifica se o número já está na linha
+    for x in range(9):
+        if board[row][x] == num:
+            return False
+
+    # Verifica se o número já está na coluna
+    for x in range(9):
+        if board[x][col] == num:
+            return False
+
+    # Verifica se o número já está no quadrante 3x3
+    start_row = row - row % 3
+    start_col = col - col % 3
+    for i in range(3):
+        for j in range(3):
+            if board[i + start_row][j + start_col] == num:
+                return False
+
+    return True
+
+def solve_sudoku(board):
+    empty = find_empty_location(board)
+    if not empty:
+        return True  # Solução encontrada
+    row, col = empty
+
+    for num in range(1, 10):
+        if is_valid(board, row, col, num):
+            board[row][col] = num
+
+            if solve_sudoku(board):
+                return True
+
+            # Se falhar, desfaz a escolha
+            board[row][col] = 0
+
+    return False
+
+def find_empty_location(board):
+    for i in range(9):
+        for j in range(9):
+            if board[i][j] == 0:
+                return (i, j)
+    return None
+
+# Exemplo de uso
+sudoku_board = [
+    [5, 3, 0, 0, 7, 0, 0, 0, 0],
+    [6, 0, 0, 1, 9, 5, 0, 0, 0],
+    [0, 9, 8, 0, 0, 0, 0, 6, 0],
+    [8, 0, 0, 0, 6, 0, 0, 0, 3],
+    [4, 0, 0, 8, 0, 3, 0, 0, 1],
+    [7, 0, 0, 0, 2, 0, 0, 0, 6],
+    [0, 6, 0, 0, 0, 0, 2, 8, 0],
+    [0, 0, 0, 4, 1, 9, 0, 0, 5],
+    [0, 0, 0, 0, 8, 0, 0, 7, 9]
+]
+
+if solve_sudoku(sudoku_board):
+    for row in sudoku_board:
+        print(row)
+else:
+    print("Não foi possível encontrar uma solução.")
+```
+
+### Explicação:
+- **is_valid**: Verifica se um número pode ser colocado em uma posição específica sem violar as regras do Sudoku.
+- **solve_sudoku**: Tenta resolver o tabuleiro usando backtracking. Se encontrar uma solução, retorna `True`; caso contrário, `False`.
+- **find_empty_location**: Encontra uma célula vazia no tabuleiro (representada por 0).
+
+Este código modifica o tabuleiro original preenchendo os espaços vazios com números válidos, resolvendo o Sudoku.
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado OpenAI GPT-4o: 1.00
+🏗️ Testando Anthropic Claude Sonnet 4...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 0.9166666666666666, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: O score é 0.92 porque a resposta está quase totalmente relevante, apenas incluindo a impressão do tabuleiro, que não é necessária para resolver o Sudoku, mas o restante da solução está correto e focado no pedido., error: None)
+
+For test case:
+
+  - input: Implemente uma função em Python que resolva um tabuleiro de Sudoku 9x9 usando backtracking. 
+A função deve modificar o tabuleiro original preenchendo os espaços vazios (representados por 0) com números válidos.
+  - actual output: Aqui está uma implementação completa de um solucionador de Sudoku usando backtracking:
+
+```python
+def resolver_sudoku(tabuleiro):
+    """
+    Resolve um tabuleiro de Sudoku 9x9 usando backtracking.
+    
+    Args:
+        tabuleiro: Lista 9x9 onde 0 representa células vazias
+    
+    Returns:
+        True se o Sudoku foi resolvido, False caso contrário
+    """
+    
+    def eh_valido(tabuleiro, linha, coluna, num):
+        """
+        Verifica se é válido colocar um número em uma posição específica.
+        """
+        # Verifica a linha
+        for col in range(9):
+            if tabuleiro[linha][col] == num:
+                return False
+        
+        # Verifica a coluna
+        for lin in range(9):
+            if tabuleiro[lin][coluna] == num:
+                return False
+        
+        # Verifica o quadrante 3x3
+        inicio_linha = (linha // 3) * 3
+        inicio_coluna = (coluna // 3) * 3
+        
+        for lin in range(inicio_linha, inicio_linha + 3):
+            for col in range(inicio_coluna, inicio_coluna + 3):
+                if tabuleiro[lin][col] == num:
+                    return False
+        
+        return True
+    
+    def encontrar_celula_vazia(tabuleiro):
+        """
+        Encontra a próxima célula vazia no tabuleiro.
+        """
+        for linha in range(9):
+            for coluna in range(9):
+                if tabuleiro[linha][coluna] == 0:
+                    return linha, coluna
+        return None, None
+    
+    def backtrack(tabuleiro):
+        """
+        Função recursiva que implementa o algoritmo de backtracking.
+        """
+        linha, coluna = encontrar_celula_vazia(tabuleiro)
+        
+        # Se não há células vazias, o Sudoku está resolvido
+        if linha is None:
+            return True
+        
+        # Tenta números de 1 a 9
+        for num in range(1, 10):
+            if eh_valido(tabuleiro, linha, coluna, num):
+                # Coloca o número na célula
+                tabuleiro[linha][coluna] = num
+                
+                # Recursivamente tenta resolver o resto
+                if backtrack(tabuleiro):
+                    return True
+                
+                # Se não funcionou, desfaz a jogada (backtrack)
+                tabuleiro[linha][coluna] = 0
+        
+        # Se nenhum número funcionou, retorna False
+        return False
+    
+    return backtrack(tabuleiro)
+
+
+def imprimir_tabuleiro(tabuleiro):
+    """
+    Imprime o tabuleiro de Sudoku de forma organizada.
+    """
+    for i in range(9):
+        if i % 3 == 0 and i != 0:
+            print("- - - - - - - - - - - -")
+        
+        for j in range(9):
+            if j % 3 == 0 and j !=
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado Anthropic Claude Sonnet 4: 0.92
+🏗️ Testando Cohere Command...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 0.6666666666666666, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 0.67 because, while the main request was addressed, some statements about the algorithm being structured, scalable, and able to handle larger puzzles were not directly relevant to implementing a 9x9 Sudoku solver in Python using backtracking. These extra details detracted from a fully focused answer., error: None)
+
+For test case:
+
+  - input: Implemente uma função em Python que resolva um tabuleiro de Sudoku 9x9 usando backtracking. 
+A função deve modificar o tabuleiro original preenchendo os espaços vazios (representados por 0) com números válidos.
+  - actual output:  Backtracking is a powerful recursive algorithm that solves the Sudoku puzzle by satisfying the constraints one at a time. It explores different possibilities to find a solution and only continues if a choice leads to a valid move. The algorithm I will demonstrate is structured and scalable, capable of handling larger puzzles. Here's the implemented function in Python:
+```python
+def solve_sudoku(board):
+    empty_cells = find_empty_cells(board)
+    if not empty_cells:
+        return True  # All cells are filled, puzzle solved
+
+    for cell in empty_cells:
+        for num in valid_numbers(board, cell):
+            if place_number(board, cell, num):
+                if solve_sudoku(board):  # Recursive call
+                    return True
+
+    return False  # No valid number found for any cell
+
+def find_empty_cells(board):
+    empty_cells = []
+    for i in range(9):
+        for j in range(9):
+            if board[i][j] == 0:
+                empty_cells.append((i, j))
+    return empty_cells
+
+def valid_numbers(board, cell):
+    row, col = cell
+    num_list = [
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado Cohere Command: 0.67
+
+🔍 Benchmark: BalancedParentheses
+🏗️ Testando OpenAI GPT-4o...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 1.00 because the answer was fully relevant and addressed the input perfectly, with no irrelevant statements. Great job staying focused on the task!, error: None)
+
+For test case:
+
+  - input: Escreva uma função em Python que determine se uma string composta apenas por '(', ')', '{', '}', '[' e ']' está com os parênteses balanceados.
+  - actual output: Para determinar se uma string composta apenas por parênteses, colchetes e chaves está balanceada, podemos usar uma abordagem baseada em pilha (stack). A ideia é percorrer cada caractere da string e usar uma pilha para manter o controle dos símbolos de abertura. Quando encontramos um símbolo de fechamento, verificamos se ele corresponde ao símbolo de abertura no topo da pilha. Se todos os símbolos forem processados corretamente e a pilha estiver vazia no final, a string está balanceada.
+
+Aqui está uma implementação em Python:
+
+```python
+def esta_balanceada(s):
+    # Mapeamento de símbolos de fechamento para abertura
+    pares = {')': '(', '}': '{', ']': '['}
+    # Pilha para manter os símbolos de abertura
+    pilha = []
+
+    # Percorre cada caractere na string
+    for char in s:
+        # Se for um símbolo de abertura, empilha
+        if char in pares.values():
+            pilha.append(char)
+        # Se for um símbolo de fechamento
+        elif char in pares:
+            # Verifica se a pilha está vazia ou se o topo da pilha não corresponde ao símbolo de abertura esperado
+            if not pilha or pilha[-1] != pares[char]:
+                return False
+            # Caso contrário, desempilha o símbolo de abertura correspondente
+            pilha.pop()
+
+    # Se a pilha estiver vazia, todos os símbolos foram balanceados
+    return not pilha
+
+# Exemplos de uso
+print(esta_balanceada("()"))        # True
+print(esta_balanceada("()[]{}"))    # True
+print(esta_balanceada("(]"))        # False
+print(esta_balanceada("([)]"))      # False
+print(esta_balanceada("{[]}"))      # True
+```
+
+### Explicação:
+- Usamos um dicionário `pares` para mapear cada símbolo de fechamento para seu símbolo de abertura correspondente.
+- Usamos uma lista `pilha` para simular o comportamento de uma pilha.
+- Para cada caractere na string:
+  - Se for um símbolo de abertura (`(`, `{`, `[`), empilhamos ele.
+  - Se for um símbolo de fechamento (`)`, `}`, `]`), verificamos se a pilha está vazia ou se o topo da pilha não corresponde ao símbolo de abertura esperado. Se qualquer uma dessas condições for verdadeira, a string não está balanceada.
+  - Se o símbolo de fechamento corresponder ao topo da pilha, desempilhamos o topo.
+- No final, verificamos se a pilha está vazia. Se estiver, a string está balanceada; caso contrário, não está.
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado OpenAI GPT-4o: 1.00
+🏗️ Testando Anthropic Claude Sonnet 4...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: A pontuação é 1.00 porque a resposta está totalmente relevante ao pedido, sem nenhuma informação irrelevante. Ótimo trabalho mantendo o foco na solicitação!, error: None)
+
+For test case:
+
+  - input: Escreva uma função em Python que determine se uma string composta apenas por '(', ')', '{', '}', '[' e ']' está com os parênteses balanceados.
+  - actual output: Aqui está uma função em Python para verificar se os parênteses estão balanceados:
+
+```python
+def parenteses_balanceados(s):
+    """
+    Verifica se uma string contendo apenas parênteses, colchetes e chaves
+    está balanceada.
+    
+    Args:
+        s (str): String contendo apenas '(', ')', '{', '}', '[', ']'
+    
+    Returns:
+        bool: True se estiver balanceada, False caso contrário
+    """
+    # Pilha para armazenar os símbolos de abertura
+    pilha = []
+    
+    # Dicionário para mapear símbolos de fechamento com seus pares de abertura
+    pares = {')': '(', '}': '{', ']': '['}
+    
+    for char in s:
+        # Se for um símbolo de abertura, adiciona na pilha
+        if char in '({[':
+            pilha.append(char)
+        # Se for um símbolo de fechamento
+        elif char in ')}]':
+            # Se a pilha estiver vazia ou não houver correspondência
+            if not pilha or pilha[-1] != pares[char]:
+                return False
+            # Remove o símbolo de abertura correspondente da pilha
+            pilha.pop()
+    
+    # Se a pilha estiver vazia, todos os símbolos foram balanceados
+    return len(pilha) == 0
+
+
+# Versão alternativa mais concisa
+def parenteses_balanceados_v2(s):
+    """Versão alternativa da função"""
+    pilha = []
+    pares = {'(': ')', '{': '}', '[': ']'}
+    
+    for char in s:
+        if char in pares:  # Símbolo de abertura
+            pilha.append(char)
+        else:  # Símbolo de fechamento
+            if not pilha or pares[pilha.pop()] != char:
+                return False
+    
+    return not pilha
+
+
+# Exemplos de uso e testes
+if __name__ == "__main__":
+    # Casos de teste
+    casos_teste = [
+        ("()", True),
+        ("()[]{}", True),
+        ("([{}])", True),
+        ("({[]})", True),
+        ("(]", False),
+        ("([)]", False),
+        ("((", False),
+        ("))", False),
+        ("", True),
+        ("{[()]}", True),
+        ("({[}])", False),
+        ("((()))", True),
+        ("((())", False)
+    ]
+    
+    print("Testando a função:")
+    for string, esperado in casos_teste:
+        resultado = parenteses_balanceados(string)
+        status = "✓" if resultado == esperado else "✗"
+        print(f"{status} '{string}' -> {resultado} (esperado: {esperado})")
+```
+
+**Como a função funciona:**
+
+1. **Estrutura de dados**: Usa uma pilha (lista) para armazenar os símbolos de abertura
+2. **Mapeamento**: Cria um dicionário que mapeia cada símbolo de fechamento com seu par de abertura
+3. **Algoritmo**:
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado Anthropic Claude Sonnet 4: 1.00
+🏗️ Testando Cohere Command...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 1.00 because the answer was fully relevant and addressed the input perfectly, with no irrelevant statements. Great job staying focused and concise!, error: None)
+
+For test case:
+
+  - input: Escreva uma função em Python que determine se uma string composta apenas por '(', ')', '{', '}', '[' e ']' está com os parênteses balanceados.
+  - actual output:  Voce pode escrever uma funcao Python que determine se uma string esta com os parantesis balanceados usando regexp via estrutura de dados regexp:
+```python
+import re
+
+def is_balanced_brackets(s):
+    return re.match(r"^(\[|{|[|])*(\d*)$", s) == None
+```
+
+A funcao espera um string s e lida com seus caracteres speciales como '(', ')', '{', '}', '[', ']' para verificar se eles estao na forma de uma sequencia que comece e termina apos um delimitador, e que todo delimitador e fechador esteja sendo aproveitado. O regexp utiliza um match group para capturar o maior numero de repeticao de um delimitador e fechado, e se um delimitador e fechado for esgotado, o match group nao captura nulo. 
+
+A funcao funciona como segue:
+```python
+print(is_balanced_
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado Cohere Command: 1.00
+
+🔍 Benchmark: LRUCache
+🏗️ Testando OpenAI GPT-4o...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 1.00 because the answer was fully relevant and addressed the input perfectly. Great job staying focused and on-topic!, error: None)
+
+For test case:
+
+  - input: Implemente uma classe LRUCache em Python com os métodos get e put, ambos com complexidade O(1).
+  - actual output: Para implementar uma classe `LRUCache` em Python com os métodos `get` e `put`, ambos com complexidade O(1), podemos usar uma combinação de um dicionário e uma lista duplamente ligada. O dicionário nos permitirá acessar os elementos em O(1), enquanto a lista duplamente ligada nos ajudará a manter a ordem dos elementos para que possamos identificar rapidamente qual elemento remover quando a capacidade máxima for atingida.
+
+Aqui está uma implementação da classe `LRUCache`:
+
+```python
+class Node:
+    def __init__(self, key, value):
+        self.key = key
+        self.value = value
+        self.prev = None
+        self.next = None
+
+class LRUCache:
+    def __init__(self, capacity: int):
+        self.capacity = capacity
+        self.cache = {}
+        self.head = Node(0, 0)
+        self.tail = Node(0, 0)
+        self.head.next = self.tail
+        self.tail.prev = self.head
+
+    def _remove(self, node: Node):
+        prev_node = node.prev
+        next_node = node.next
+        prev_node.next = next_node
+        next_node.prev = prev_node
+
+    def _add(self, node: Node):
+        prev_node = self.tail.prev
+        prev_node.next = node
+        node.prev = prev_node
+        node.next = self.tail
+        self.tail.prev = node
+
+    def get(self, key: int) -> int:
+        if key in self.cache:
+            node = self.cache[key]
+            self._remove(node)
+            self._add(node)
+            return node.value
+        return -1
+
+    def put(self, key: int, value: int) -> None:
+        if key in self.cache:
+            self._remove(self.cache[key])
+        node = Node(key, value)
+        self._add(node)
+        self.cache[key] = node
+        if len(self.cache) > self.capacity:
+            lru = self.head.next
+            self._remove(lru)
+            del self.cache[lru.key]
+```
+
+### Explicação:
+
+- **Node Class**: Cada nó da lista duplamente ligada contém uma chave e um valor, além de ponteiros para o nó anterior e o próximo.
+
+- **LRUCache Class**:
+  - `__init__`: Inicializa a cache com uma capacidade fixa, um dicionário para armazenar os nós e dois nós fictícios (`head` e `tail`) para facilitar a adição e remoção de nós.
+  
+  - `_remove`: Remove um nó da lista duplamente ligada.
+  
+  - `_add`: Adiciona um nó logo antes do nó `tail`, indicando que é o mais recentemente usado.
+  
+  - `get`: Retorna o valor associado à chave se ela estiver presente na cache. Move o nó para a posição mais recente.
+  
+  - `put`: Adiciona um novo nó à cache. Se a chave já existir, o nó antigo é removido. Se a cache exceder a capacidade, o nó menos recentemente usado (logo após `head`) é removido.
+
+Essa implementação garante que tanto `get` quanto `put` operem em tempo constante O(1).
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado OpenAI GPT-4o: 1.00
+🏗️ Testando Anthropic Claude Sonnet 4...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 1.00 because the answer was fully relevant and addressed the input perfectly without any irrelevant statements. Great job staying focused and concise!, error: None)
+
+For test case:
+
+  - input: Implemente uma classe LRUCache em Python com os métodos get e put, ambos com complexidade O(1).
+  - actual output: Vou implementar uma classe LRUCache (Least Recently Used Cache) com complexidade O(1) para ambos os métodos `get` e `put`. Para isso, usarei uma combinação de dicionário (HashMap) e lista duplamente ligada.
+
+```python
+class Node:
+    """Nó da lista duplamente ligada"""
+    def __init__(self, key=0, value=0):
+        self.key = key
+        self.value = value
+        self.prev = None
+        self.next = None
+
+class LRUCache:
+    """
+    Implementação de LRU Cache com complexidade O(1) para get e put
+    
+    Estrutura:
+    - HashMap para acesso O(1) aos nós
+    - Lista duplamente ligada para manter ordem de uso
+    - Nós dummy (head e tail) para simplificar operações
+    """
+    
+    def __init__(self, capacity: int):
+        """
+        Inicializa o cache com capacidade especificada
+        
+        Args:
+            capacity: Capacidade máxima do cache
+        """
+        self.capacity = capacity
+        self.cache = {}  # HashMap: key -> Node
+        
+        # Criar nós dummy para head e tail
+        self.head = Node()  # Mais recentemente usado
+        self.tail = Node()  # Menos recentemente usado
+        self.head.next = self.tail
+        self.tail.prev = self.head
+    
+    def _add_node(self, node: Node) -> None:
+        """
+        Adiciona um nó logo após o head (posição mais recente)
+        
+        Args:
+            node: Nó a ser adicionado
+        """
+        node.prev = self.head
+        node.next = self.head.next
+        
+        self.head.next.prev = node
+        self.head.next = node
+    
+    def _remove_node(self, node: Node) -> None:
+        """
+        Remove um nó da lista duplamente ligada
+        
+        Args:
+            node: Nó a ser removido
+        """
+        prev_node = node.prev
+        next_node = node.next
+        
+        prev_node.next = next_node
+        next_node.prev = prev_node
+    
+    def _move_to_head(self, node: Node) -> None:
+        """
+        Move um nó existente para a posição head (mais recente)
+        
+        Args:
+            node: Nó a ser movido
+        """
+        self._remove_node(node)
+        self._add_node(node)
+    
+    def _pop_tail(self) -> Node:
+        """
+        Remove e retorna o último nó (menos recentemente usado)
+        
+        Returns:
+            Nó removido da cauda
+        """
+        last_node = self.tail.prev
+        self._remove_node(last_node)
+        return last_node
+    
+    def get(self, key: int) -> int:
+        """
+        Obtém o valor associado à chave
+        
+        Args:
+            key: Chave a ser buscada
+            
+        Returns:
+            Valor associado à chave ou -1 se não encontrado
+            
+        Complexidade:
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado Anthropic Claude Sonnet 4: 1.00
+🏗️ Testando Cohere Command...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 0.8333333333333334, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 0.83 because the output included an extra explanation about the get method not removing the key from the cache, which, while informative, was not directly relevant to the implementation request. However, the main response still addressed the input well., error: None)
+
+For test case:
+
+  - input: Implemente uma classe LRUCache em Python com os métodos get e put, ambos com complexidade O(1).
+  - actual output:  A implementações da classe LRUCache em Python com os métodos get e put, ambos com complexity O(1):
+```python
+class LRUCache:
+    def __init__(self, capacity):
+        self.capacity = capacity
+        self.cache = {}
+        self.order = []
+
+    def get(self, key):
+        if key in self.cache:
+            value = self.cache.pop(key)
+            self.order.remove(key)
+            self.order.append(key)
+            self.cache[key] = value  # Reinsert value to maintain LRU order
+            return value
+        else:
+            return None
+
+    def put(self, key, value):
+        if key in self.cache:
+            self.cache.pop(key)
+            self.order.remove(key)
+        self.order.append(key)
+        if len(self.order) > self.capacity:
+            self.order.pop(0)
+        self.cache[key] = value
+```
+
+O método **`get`** recupera a chave indicada e removerá a chave existente do cache, mas priorizará as chaves usadas mais recent
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado Cohere Command: 0.83
+
+🔍 Benchmark: FindAllAnagrams
+🏗️ Testando OpenAI GPT-4o...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 1.00 because the answer is fully relevant and directly addresses the input without any irrelevant statements. Great job staying focused and concise!, error: None)
+
+For test case:
+
+  - input: Dada uma string s e um padrão p, escreva uma função Python que retorne todos os índices de início dos anagramas de p em s.
+  - actual output: Para resolver o problema de encontrar todos os índices de início dos anagramas de um padrão `p` em uma string `s`, podemos usar a técnica de "sliding window" (janela deslizante) junto com um contador de frequências de caracteres. A ideia é manter uma janela do tamanho do padrão `p` e deslizar essa janela ao longo da string `s`, verificando se a frequência dos caracteres na janela atual corresponde à frequência dos caracteres no padrão `p`.
+
+Aqui está uma implementação em Python para essa abordagem:
+
+```python
+from collections import Counter
+
+def find_anagrams(s, p):
+    # Contador de frequência para o padrão p
+    p_count = Counter(p)
+    # Contador de frequência para a janela atual na string s
+    s_count = Counter()
+    
+    # Comprimento do padrão
+    p_length = len(p)
+    # Comprimento da string s
+    s_length = len(s)
+    
+    # Lista para armazenar os índices de início dos anagramas
+    result = []
+    
+    # Inicializar a janela deslizante
+    for i in range(s_length):
+        # Adicionar o caractere atual à janela
+        s_count[s[i]] += 1
+        
+        # Remover o caractere que está fora da janela
+        if i >= p_length:
+            if s_count[s[i - p_length]] == 1:
+                del s_count[s[i - p_length]]
+            else:
+                s_count[s[i - p_length]] -= 1
+        
+        # Comparar os contadores de frequência
+        if s_count == p_count:
+            # Se forem iguais, encontramos um anagrama
+            result.append(i - p_length + 1)
+    
+    return result
+
+# Exemplo de uso
+s = "cbaebabacd"
+p = "abc"
+print(find_anagrams(s, p))  # Saída: [0, 6]
+```
+
+### Explicação do Código:
+
+1. **Contadores de Frequência**: Utilizamos `Counter` do módulo `collections` para contar a frequência dos caracteres no padrão `p` e na janela atual da string `s`.
+
+2. **Inicialização da Janela**: Percorremos a string `s` com um índice `i`. Para cada caractere `s[i]`, adicionamos ao contador da janela `s_count`.
+
+3. **Manutenção da Janela**: Se o índice `i` for maior ou igual ao comprimento do padrão `p`, removemos o caractere que está saindo da janela (ou seja, `s[i - p_length]`).
+
+4. **Comparação de Contadores**: Após ajustar a janela, comparamos `s_count` com `p_count`. Se forem iguais, significa que a janela atual é um anagrama de `p`, e adicionamos o índice de início da janela à lista de resultados.
+
+5. **Resultado**: Retornamos a lista de índices onde os anagramas de `p` começam em `s`.
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado OpenAI GPT-4o: 1.00
+🏗️ Testando Anthropic Claude Sonnet 4...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 1.00 because the answer was fully relevant and addressed the input perfectly. Great job!, error: None)
+
+For test case:
+
+  - input: Dada uma string s e um padrão p, escreva uma função Python que retorne todos os índices de início dos anagramas de p em s.
+  - actual output: Vou criar uma função que encontra todos os índices onde começam anagramas de um padrão em uma string.
+
+## Solução usando Sliding Window
+
+```python
+def encontrar_anagramas(s, p):
+    """
+    Encontra todos os índices de início dos anagramas de p em s.
+    
+    Args:
+        s (str): String onde procurar
+        p (str): Padrão cujos anagramas queremos encontrar
+    
+    Returns:
+        list: Lista com os índices de início dos anagramas
+    """
+    if len(p) > len(s):
+        return []
+    
+    resultado = []
+    len_p = len(p)
+    
+    # Contar frequência das letras no padrão
+    freq_p = {}
+    for char in p:
+        freq_p[char] = freq_p.get(char, 0) + 1
+    
+    # Sliding window
+    freq_window = {}
+    
+    # Processar a primeira janela
+    for i in range(len_p):
+        char = s[i]
+        freq_window[char] = freq_window.get(char, 0) + 1
+    
+    # Verificar se a primeira janela é um anagrama
+    if freq_window == freq_p:
+        resultado.append(0)
+    
+    # Deslizar a janela pelo resto da string
+    for i in range(len_p, len(s)):
+        # Adicionar novo caractere à direita
+        char_direita = s[i]
+        freq_window[char_direita] = freq_window.get(char_direita, 0) + 1
+        
+        # Remover caractere da esquerda
+        char_esquerda = s[i - len_p]
+        freq_window[char_esquerda] -= 1
+        if freq_window[char_esquerda] == 0:
+            del freq_window[char_esquerda]
+        
+        # Verificar se a janela atual é um anagrama
+        if freq_window == freq_p:
+            resultado.append(i - len_p + 1)
+    
+    return resultado
+```
+
+## Versão Otimizada com Counter
+
+```python
+from collections import Counter
+
+def encontrar_anagramas_v2(s, p):
+    """
+    Versão otimizada usando Counter do módulo collections.
+    """
+    if len(p) > len(s):
+        return []
+    
+    resultado = []
+    len_p = len(p)
+    counter_p = Counter(p)
+    
+    # Sliding window usando Counter
+    window = Counter(s[:len_p])
+    
+    if window == counter_p:
+        resultado.append(0)
+    
+    for i in range(len_p, len(s)):
+        # Adicionar novo caractere
+        window[s[i]] += 1
+        
+        # Remover caractere antigo
+        char_saindo = s[i - len_p]
+        window[char_saindo] -= 1
+        if window[char_saindo] == 0:
+            del window[char_saindo]
+        
+        # Verificar anagrama
+        if window == counter_p:
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado Anthropic Claude Sonnet 4: 1.00
+🏗️ Testando Cohere Command...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 0.6428571428571429, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 0.64 because, while the main logic for finding anagrams may be present, several irrelevant statements—such as function naming, incorrect conditions, example usage, and output printing—detract from the focus on the core algorithm, preventing a higher score., error: None)
+
+For test case:
+
+  - input: Dada uma string s e um padrão p, escreva uma função Python que retorne todos os índices de início dos anagramas de p em s.
+  - actual output:  Here's a Python function to find the starting indices of all anagrams of pattern `p` in string `s`:
+```python
+def find_anagram_indices(s, p):
+    def count_letters(string, char):
+        count = 0
+        for i in string:
+            if i == char:
+                count += 1
+        return count
+    
+    p_length = len(p)
+    anagram_indices = []
+    
+    for i in range(len(s) - p_length + 1):
+        current_anagram = s[i:i+p_length]
+        if current_anagram == p and count_letters(s[i+p_length:], p[0]) == p_length:
+            anagram_indices.append(i)
+    
+    return anagram_indices
+
+# Example usage:
+s = "abcdeabcffabdd"
+p = "abcd"
+result = find_anagram_indices(s, p)
+print(result)  # Output: [0, 9]
+```
+
+This function first uses a recursive approach to count the occurrences of each character in the string (to avoid overlapping anagrams). Then, it checks each substring
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado Cohere Command: 0.64
+
+🔍 Benchmark: DijkstraShortestPath
+🏗️ Testando OpenAI GPT-4o...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 1.00 because the answer was fully relevant and directly addressed the request without any irrelevant information. Great job staying focused and clear!, error: None)
+
+For test case:
+
+  - input: Implemente o algoritmo de Dijkstra em Python para encontrar o menor caminho entre dois nós em um grafo representado por lista de adjacência.
+  - actual output: Para implementar o algoritmo de Dijkstra em Python usando uma lista de adjacência, podemos seguir os seguintes passos:
+
+1. Inicializar as distâncias de todos os nós como infinito, exceto o nó de origem, que terá distância zero.
+2. Usar uma fila de prioridade (min-heap) para sempre expandir o nó com a menor distância conhecida.
+3. Atualizar as distâncias dos vizinhos do nó atual se um caminho mais curto for encontrado.
+4. Repetir o processo até que todos os nós tenham sido visitados ou o nó de destino tenha sido alcançado.
+
+Aqui está uma implementação em Python:
+
+```python
+import heapq
+
+def dijkstra(graph, start, end):
+    # Inicializa as distâncias de todos os nós como infinito
+    distances = {node: float('inf') for node in graph}
+    # A distância do nó inicial para ele mesmo é 0
+    distances[start] = 0
+    # Fila de prioridade para nós a serem explorados
+    priority_queue = [(0, start)]
+    # Dicionário para armazenar o caminho mais curto
+    previous_nodes = {node: None for node in graph}
+
+    while priority_queue:
+        # Extrai o nó com a menor distância
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        # Se chegamos ao nó de destino, podemos parar
+        if current_node == end:
+            break
+
+        # Explora os vizinhos do nó atual
+        for neighbor, weight in graph[current_node]:
+            distance = current_distance + weight
+
+            # Se encontrarmos um caminho mais curto para o vizinho
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                previous_nodes[neighbor] = current_node
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    # Reconstrói o caminho mais curto
+    path = []
+    current_node = end
+    while current_node is not None:
+        path.append(current_node)
+        current_node = previous_nodes[current_node]
+    path = path[::-1]  # Inverte o caminho
+
+    # Retorna a distância e o caminho
+    return distances[end], path
+
+# Exemplo de uso
+graph = {
+    'A': [('B', 1), ('C', 4)],
+    'B': [('A', 1), ('C', 2), ('D', 5)],
+    'C': [('A', 4), ('B', 2), ('D', 1)],
+    'D': [('B', 5), ('C', 1)]
+}
+
+start_node = 'A'
+end_node = 'D'
+distance, path = dijkstra(graph, start_node, end_node)
+print(f"Menor distância de {start_node} para {end_node} é {distance}")
+print(f"Caminho: {' -> '.join(path)}")
+```
+
+### Explicação:
+
+- **Graph Representation**: O grafo é representado como um dicionário onde cada chave é um nó e o valor é uma lista de tuplas. Cada tupla contém um vizinho e o peso da aresta até esse vizinho.
+- **Priority Queue**: Usamos `heapq` para implementar uma fila de prioridade que nos permite sempre expandir o nó com a menor distância conhecida.
+- **Path Reconstruction**: Após calcular as distâncias, reconstruímos o caminho mais curto usando o dicionário `previous_nodes`.
+
+Este código encontra o menor caminho entre dois nós em um grafo ponderado e direcionado.
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado OpenAI GPT-4o: 1.00
+🏗️ Testando Anthropic Claude Sonnet 4...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 1.00 because the answer was fully relevant and addressed the request directly without any irrelevant information. Great job!, error: None)
+
+For test case:
+
+  - input: Implemente o algoritmo de Dijkstra em Python para encontrar o menor caminho entre dois nós em um grafo representado por lista de adjacência.
+  - actual output: Vou implementar o algoritmo de Dijkstra com uma versão completa e bem documentada:
+
+```python
+import heapq
+from collections import defaultdict
+import math
+
+class Grafo:
+    def __init__(self):
+        self.vertices = defaultdict(list)
+    
+    def adicionar_aresta(self, origem, destino, peso):
+        """Adiciona uma aresta ao grafo"""
+        self.vertices[origem].append((destino, peso))
+    
+    def dijkstra(self, inicio, fim=None):
+        """
+        Implementa o algoritmo de Dijkstra
+        
+        Args:
+            inicio: nó de origem
+            fim: nó de destino (opcional - se None, calcula para todos os nós)
+        
+        Returns:
+            tuple: (distâncias, predecessores)
+        """
+        # Inicialização
+        distancias = defaultdict(lambda: math.inf)
+        predecessores = {}
+        visitados = set()
+        
+        # Distância do nó inicial para ele mesmo é 0
+        distancias[inicio] = 0
+        
+        # Fila de prioridade: (distância, nó)
+        fila_prioridade = [(0, inicio)]
+        
+        while fila_prioridade:
+            # Remove o nó com menor distância
+            distancia_atual, no_atual = heapq.heappop(fila_prioridade)
+            
+            # Se já foi visitado, pula
+            if no_atual in visitados:
+                continue
+            
+            # Marca como visitado
+            visitados.add(no_atual)
+            
+            # Se chegou no destino e foi especificado, pode parar
+            if fim and no_atual == fim:
+                break
+            
+            # Examina todos os vizinhos
+            for vizinho, peso in self.vertices[no_atual]:
+                if vizinho not in visitados:
+                    # Calcula nova distância
+                    nova_distancia = distancia_atual + peso
+                    
+                    # Se encontrou um caminho mais curto
+                    if nova_distancia < distancias[vizinho]:
+                        distancias[vizinho] = nova_distancia
+                        predecessores[vizinho] = no_atual
+                        heapq.heappush(fila_prioridade, (nova_distancia, vizinho))
+        
+        return dict(distancias), predecessores
+    
+    def obter_caminho(self, predecessores, inicio, fim):
+        """Reconstrói o caminho do início ao fim"""
+        if fim not in predecessores and fim != inicio:
+            return None  # Não há caminho
+        
+        caminho = []
+        atual = fim
+        
+        while atual is not None:
+            caminho.append(atual)
+            atual = predecessores.get(atual)
+        
+        caminho.reverse()
+        return caminho if caminho[0] == inicio else None
+
+def dijkstra_simples(grafo_dict, inicio, fim):
+    """
+    Versão simplificada que aceita dicionário diretamente
+    
+    Args:
+        grafo_dict: {nó: [(vizinho, peso), ...]}
+        inicio: nó de origem
+        fim: nó de
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado Anthropic Claude Sonnet 4: 1.00
+🏗️ Testando Cohere Command...
+✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1, strict=False, async_mode=True)...
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.5, strict: False, evaluation model: gpt-4.1, reason: The score is 1.00 because the answer is fully relevant and directly addresses the request to implement Dijkstra's algorithm in Python for a graph represented by an adjacency list. Great job staying focused and on-topic!, error: None)
+
+For test case:
+
+  - input: Implemente o algoritmo de Dijkstra em Python para encontrar o menor caminho entre dois nós em um grafo representado por lista de adjacência.
+  - actual output:  Here's an implementation of Dijkstra's algorithm in Python for finding the shortest path between two nodes in a graph represented by an adjacency list:
+```python
+import heapq
+
+def dijkstra(adjacency_list, start, end):
+    # Initialize distances and visited nodes
+    distances = {node: float('inf') for node in adjacency_list}
+    distances[start] = 0
+    visited = set()
+    
+    # Use a priority queue to keep track of nodes to visit
+    priority_queue = [(0, start)]
+    
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+        
+        # Skip nodes that have already been visited
+        if current_node in visited:
+            continue
+        
+        visited.add(current_node)
+        
+        for neighbor, weight in adjacency_list[current_node].items():
+            distance = current_distance + weight
+            
+            # Update distance if a shorter path is found
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+    
+    # Return the shortest path
+    path = []
+    while end != start:
+        path.insert(0
+  - expected output: 
+  - context: None
+  - retrieval context: None
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 100.00% pass rate
+
+======================================================================
+
+
+✓ Tests finished 🎉! Run 'deepeval view' to analyze, debug, and save evaluation results on Confident AI.
+
+📊 Resultado Cohere Command: 1.00
