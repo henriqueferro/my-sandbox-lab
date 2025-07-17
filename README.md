@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  💡 Personal R&D space of <a href="https://www.henriqueferro.com" target="_blank"><b>Henrique Ferro</b></a><br>
+  💡 Personal R&D space of <a target="_blank" rel="noopener noreferrer" href="https://www.henriqueferro.com"><b>Henrique Ferro</b></a><br>
   🚀 Cloud Engineering Director @ Oracle • Mentor • Speaker • Builder
 </p>
 
@@ -57,5 +57,5 @@ Feel free to reuse anything here for **learning** or **inspiration**. Most code 
 git clone https://github.com/henriqueferro/my-sandbox-lab.git
 ```
 <p align="center">
-  Built with ❤️ by Henrique Ferro • <a href="https://www.linkedin.com/in/henriqueferro">Let's Connect on LinkedIn</a>
+  Built with ❤️ by Henrique Ferro • <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/henriqueferro">Let's Connect on LinkedIn</a>
 </p>
