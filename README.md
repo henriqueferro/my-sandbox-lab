@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Java-powered-%23f80000?style=for-the-badge&logo=openjdk&logoColor=white" />
   <img src="https://img.shields.io/badge/AI-native-%23007FFF?style=for-the-badge&logo=oracle" />
   <img src="https://img.shields.io/badge/Kubernetes_on_OCI-blue?style=for-the-badge&logo=kubernetes&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring%20AI-powered-%23007396?style=for-the-badge&logo=spring" />
+  <img src="https://img.shields.io/badge/Spring-AI-%23007396?style=for-the-badge&logo=spring" />
 </p>
 
 <p align="center">
