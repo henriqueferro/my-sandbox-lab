@@ -1,0 +1,1 @@
+Escreva uma função Python que inverta uma string sem usar funções embutidas como reversed().

@@ -1,0 +1,1 @@
+Escreva uma função Python que imprime os números de 1 a 100. Para múltiplos de três, imprima "Fizz" em vez do número e para múltiplos de cinco, imprima "Buzz". Para números que são múltiplos de três e cinco, imprima "FizzBuzz".
