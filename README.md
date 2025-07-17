@@ -1,10 +1,11 @@
 <h1 align="center">🧪 My Sandbox Lab</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Java-powered-%23f80000?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/AI-native-%23007FFF?style=for-the-badge&logo=oracle" />
-  <img src="https://img.shields.io/badge/Kubernetes_on_OCI-blue?style=for-the-badge&logo=kubernetes&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring-AI-%23007396?style=for-the-badge&logo=spring" />
+  <img src="https://img.shields.io/badge/oci-lover-red.svg?logo=data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KDTwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIFRyYW5zZm9ybWVkIGJ5OiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4KPHN2ZyBmaWxsPSIjQzc0NjM0IiB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0cm9rZT0iI0M3NDYzNCI+Cg08ZyBpZD0iU1ZHUmVwb19iZ0NhcnJpZXIiIHN0cm9rZS13aWR0aD0iMCIvPgoNPGcgaWQ9IlNWR1JlcG9fdHJhY2VyQ2FycmllciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cg08ZyBpZD0iU1ZHUmVwb19pY29uQ2FycmllciI+IDx0aXRsZT5vcmFjbGU8L3RpdGxlPiA8cGF0aCBkPSJNMjEuMjcyIDIyLjE0MWgtMTAuNTM4Yy0zLjMzOC0wLjA3MC02LjAxNy0yLjc5My02LjAxNy02LjE0MXMyLjY3OS02LjA3MSA2LjAxMS02LjE0MWwwLjAwNy0waDEwLjUzOGMwLjAwMyAwIDAuMDA3IDAgMC4wMTEgMCAzLjM5MSAwIDYuMTQxIDIuNzQ5IDYuMTQxIDYuMTQxcy0yLjc0OSA2LjE0MS02LjE0MSA2LjE0MWMtMC4wMDQgMC0wLjAwOCAwLTAuMDEyIDBoMC4wMDF6TTIxLjUxMyA2LjUxOGgtMTEuMDIyYy01LjIzNCAwLjAwNC05LjQ3NCA0LjI0OC05LjQ3NCA5LjQ4MiAwIDUuMjMxIDQuMjM1IDkuNDcyIDkuNDYzIDkuNDgyaDExLjAzM2M1LjIzMS0wLjAwOCA5LjQ2OS00LjI1IDkuNDY5LTkuNDgycy00LjIzOC05LjQ3NC05LjQ2OC05LjQ4MmgtMC4wMDF6Ii8+IDwvZz4KDTwvc3ZnPg==" />
+  <img src="https://img.shields.io/badge/java-powered-%23f80000?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/ai-native-%23007FFF?style=for-the-badge&logo=probot" />
+  <img src="https://img.shields.io/badge/kubernetes_on_OCI-blue?style=for-the-badge&logo=kubernetes&logoColor=white" />
+  <img src="https://img.shields.io/badge/spring-ai-%23007396?style=for-the-badge&logo=spring" />
 </p>
 
 <p align="center">
