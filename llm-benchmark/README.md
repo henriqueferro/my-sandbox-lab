@@ -1,4 +1,6 @@
-# 🧪 LLM Code Benchmark with DeepEval
+<p align="center">
+  <h1>🧪 LLM Code Benchmark with DeepEval</h1>
+</p>
 
 This module compares the performance of LLM models on code generation tasks using the [DeepEval](https://github.com/confident-ai/deepeval) library.
 
