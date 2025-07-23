@@ -2,6 +2,7 @@ import os
 import openai
 import anthropic
 import cohere
+import requests
 from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 from deepeval import evaluate
 from deepeval.metrics import AnswerRelevancyMetric
@@ -11,6 +12,7 @@ from deepeval.test_case import LLMTestCase
 openai_client = openai.OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 anthropic_client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 cohere_client = cohere.Client(os.environ["COHERE_API_KEY"])
+api_key = os.environ.get("XAI_API_KEY")
 
 # Funções de inferência
 def run_openai(prompt):
@@ -39,6 +41,22 @@ def run_cohere(prompt):
     )
     return response.generations[0].text
 
+def run_grok3(prompt):
+    url = "https://api.x.ai/v1/chat/completions"
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json"
+    }
+    data = {
+        "model": "grok-3",
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.2,
+        "max_tokens": 800
+    }
+    response = requests.post(url, headers=headers, json=data)
+    response.raise_for_status()
+    return response.json()["choices"][0]["message"]["content"]
+
 # Prompt files
 prompts = {
     "FizzBuzz": open("prompts/fizzbuzz.txt").read(),
@@ -51,9 +69,10 @@ prompts = {
 }
 
 models = {
-    "OpenAI GPT-4o": run_openai,
+    "Grok-3 (x.ai)": run_grok3,
     "Anthropic Claude Sonnet 4": run_claude,
-    "Cohere Command": run_cohere
+    "Cohere Command": run_cohere,
+    "OpenAI GPT-4o": run_openai
 }
 
 # Métrica de avaliação

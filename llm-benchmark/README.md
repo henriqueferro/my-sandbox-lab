@@ -2,40 +2,77 @@
   <h1>🧪 LLM Code Benchmark with DeepEval</h1>
 </p>
 
-This module compares the performance of LLM models on code generation tasks using the [DeepEval](https://github.com/confident-ai/deepeval) library.
+This project benchmarks the code generation capabilities of leading Large Language Models (LLMs) using the [DeepEval](https://github.com/confident-ai/deepeval) evaluation library.
 
 ## 📦 Supported Models
 
 - 🧠 OpenAI GPT-4o
-- 🤖 Anthropic Claude 3 Sonnet
-- 🦙 Meta LLaMA 3 (via HuggingFace)
+- 🤖 Anthropic Claude Sonnet 4
+- 🦙 Cohere Command
+- 🚀 Grok-3 (x.ai)
 
-## 📂 Structure
+## 📂 Project Structure
 
 ```
 llm-benchmark/
-├── main.py               # Main benchmark code
-├── prompts/              # Evaluation prompts
+├── main.py               # Main benchmarking script
+├── prompts/              # Evaluation prompts (one .txt per task)
 │   ├── fizzbuzz.txt
-│   └── reverse_string.txt
-└── requirements.txt
+│   ├── reverse_string.txt
+│   ├── sudoku_solver.txt
+│   ├── balanced_parentheses.txt
+│   ├── lru_cache.txt
+│   ├── find_all_anagrams.txt
+│   └── dijkstra_shortest_path.txt
+├── requirements.txt      # Python dependencies
+└── README.md
 ```
 
-## ▶️ How to run
+## ▶️ How to Run
 
-```bash
-cd llm-benchmark
-pip install -r requirements.txt
+1. **Install dependencies:**
+    ```bash
+    cd llm-benchmark
+    pip install -r requirements.txt
+    ```
 
-# Set your keys:
-export OPENAI_API_KEY="..."
-export ANTHROPIC_API_KEY="..."
-export HF_TOKEN="..."
+2. **Set your API keys:**
+    ```bash
+    export OPENAI_API_KEY="..."
+    export ANTHROPIC_API_KEY="..."
+    export COHERE_API_KEY="..."
+    export XAI_API_KEY="..."
+    ```
 
-# Run
-python main.py
+3. **Run the benchmark:**
+    ```bash
+    python main.py
+    ```
+
+## 📝 How it works
+
+- For each prompt in the `prompts/` folder, the script sends the same task to all supported models.
+- Each model's output is evaluated using DeepEval's `AnswerRelevancyMetric`.
+- The results (score per model per task) are printed to the console.
+
+## 📈 Example Output
+
+```
+🔍 Benchmark: FizzBuzz
+🏗️ Testando Grok-3 (x.ai)...
+📊 Resultado Grok-3 (x.ai): 1.00
+🏗️ Testando Anthropic Claude Sonnet 4...
+📊 Resultado Anthropic Claude Sonnet 4: 1.00
+🏗️ Testando Cohere Command...
+📊 Resultado Cohere Command: 0.92
+🏗️ Testando OpenAI GPT-4o...
+📊 Resultado OpenAI GPT-4o: 1.00
 ```
 
-## 📈 Metric used
+## 📜 License
 
-- `CodeMatchMetric`: compares logic, syntax, and semantics of the generated code.
+MIT License
+
+---
+
+**Contributions and suggestions are welcome!**
