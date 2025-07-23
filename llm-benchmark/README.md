@@ -6,10 +6,10 @@ This project benchmarks the code generation capabilities of leading Large Langua
 
 ## 📦 Supported Models
 
-- 🧠 OpenAI GPT-4o
+- 🚀 Grok-3 (x.ai)
 - 🤖 Anthropic Claude Sonnet 4
 - 🦙 Cohere Command
-- 🚀 Grok-3 (x.ai)
+- 🧠 OpenAI GPT-4o
 
 ## 📂 Project Structure
 
